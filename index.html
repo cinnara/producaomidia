@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Site</title>
+</head>
+<body>
+    <header>
+        <h1>Imagem e Ação</h1>
+    </header>
+
+    <section class="principal">
+        <div class="box-img">
+            <img class="responsiva" id="web" src="img1r.png" alt="Midia">
+        </div>
+        <div class="box-txt">
+            <span>Produção de Mídia</span>
+            <h2>Mídias <br> Sociais</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Unde rem nulla voluptatibus
+            sunt, quasi labore eius dolorem! Dolores aliquam ullam ut? <br> Magni veritatis atque facilis,
+            modi ducimus sequi facere provident?</p>
+            <a target="_blank" href="https://web.whatsapp.com/" class="btnprincipal">Consulta</a>
+        </div>
+    </section>
+
+    <section class="midias">
+        <div class="box-item">
+            <h3>Tipos de Mídia</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id reiciendis <br> illo nostrum blanditiis
+            a laboriosam excepturi voluptas hic consequatur ea <br> sint obcaecati itaque necessitatibus,
+            at quisquam et architecto aperiam amet!</p>
+        </div>
+        <div class="box-item">
+            <h3>Criação de Mídia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores labore eveniet <br> sint fugit
+            officiis veniam amet voluptatem? Perspiciatis neque <br> perferendis ipsa ab vitae enim iste inventore 
+            aliquam odit totam!</p>
+        </div>
+        <div class="box-item">
+            <h3>Ferramentas</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente suscipit eveniet <br> asperiores quasi aut
+            esse debitis quae exercitationem libero sequi! Maxime <br> eligendi nisi, odio voluptates optio repellendus 
+            debitis eos deleniti.</p>
+        </div>
+        <a target="_blank" href="https://web.whatsapp.com/" class="m-top btnprincipal">Consulta</a>
+        
+    </section>
+    
+
+    <footer>
+        <p>2023 &copy Desenvolvimento Web. Todos os direitos reservados.</p>
+    </footer>
+    <div class="whats">
+        <a href="https://web.whatsapp.com/">
+        <img width="80" src="whatsap.png" alt="whatsapp">
+        </a>
+    </div>
+    <script>
+        //pegar o elemento
+        const web = document.getElementById('web');
+        //evento quando mouse estives por cima da imagem
+        web.addEventListener('mouseover',function(){
+            web.src = "imgr1.png";
+           
+        })
+
+        //evento quando mouse sair de cima da imagem
+        web.addEventListener('mouseout',function(){
+            web.src = "img1r.png";
+        })
+    </script>
+</body>
+</html>
